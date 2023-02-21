@@ -22,11 +22,16 @@
   </modules>
 
   <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/maven-project-site</url>
-    </site>
+    <repository>
+        <id>artifact</id>
+        <name>Internal Releases</name>
+        <url>http://172.31.2.104:8081/artifactory/balaji-local-release</url>
+    </repository>
+    <snapshotRepository>
+        <id>artifact</id>
+        <name>Internal Releases</name>
+        <url>http://172.31.2.104:8081/artifactory/balaji-local-snapshot</url>
+    </snapshotRepository>
   </distributionManagement>
 
   <build>
